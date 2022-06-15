@@ -5,7 +5,7 @@ from todolist.models import Item, Tag
 
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
-    list_display = ('id', 'content', 'completed', 'deadline', 'update_date')
+    list_display = ('id', 'content', 'completed', 'deadline', 'update_time')
     list_display_links = ('id', )
     list_editable = ('content', 'completed', 'deadline')
     list_filter = ('completed', 'deadline')
